@@ -9,7 +9,7 @@ Jupyterlab theme extension inspired by Monokai and Tailwind
 ## Installation
 
 ```bash
-jupyter labextension install fsx/jupyterlab-fsx-monokai-theme
+jupyter labextension install @fredericosantos/jupyterlab-fsx-monokai-theme
 ```
 
 ## Development

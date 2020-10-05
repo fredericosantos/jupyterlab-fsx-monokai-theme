@@ -493,6 +493,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 --jp-mirror-editor-comment-font-weight: normal;
 --jp-mirror-editor-number-font-weight: normal;
 --jp-mirror-editor-def-font-weight: bold;
+--jp-mirror-editor-property-font-weight: bold;
 --cm-matchingbrackets-weight: bold;
 --cm-matchingbrackets-underline: none;
 

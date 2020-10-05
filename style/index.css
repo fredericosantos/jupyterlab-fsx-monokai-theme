@@ -129,6 +129,9 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   font-weight: var(--jp-mirror-editor-def-font-weight);
 }
 
+.cm-s-jupyter span.cm-property {
+  font-weight: var(--jp-mirror-editor-property-font-weight);
+}
 
 .CodeMirror-foldmarker {
   color: var(--jp-mirror-editor-keyword-color);
