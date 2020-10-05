@@ -17,9 +17,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     manager.register({
       name: 'FSX Monokai',
       isLight: false,
-      load: () => {
-        manager.loadCSS(style)
-      },
+      load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
   },

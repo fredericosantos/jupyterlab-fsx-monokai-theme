@@ -101,40 +101,40 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
   animation: none;
 }
 
-/* Testing matching brackets */
+/* Change matching brackets */
 div.CodeMirror span.CodeMirror-matchingbracket {
   color: #b5ff00;
-  font-weight: bold;
+  font-weight: var(--cm-matchingbrackets-weight);
+  text-decoration-line: var(--cm-matchingbrackets-underline);
+}
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: #ff0000;
+  font-weight: var(--cm-matchingbrackets-weight);
+  text-decoration-line: var(--cm-matchingbrackets-underline);
 }
 
 /* Removing italic from comments */
 .cm-s-jupyter span.cm-comment {
-  color: var(--jp-mirror-editor-comment-color);
   font-weight: var(--jp-mirror-editor-comment-font-weight);
 }
 
 /*  Address format of the numbers in editor */
 .cm-s-jupyter span.cm-number {
-  color: var(--jp-mirror-editor-number-color);
   font-weight: var(--jp-mirror-editor-number-font-weight);
 }
 
 /*  Address format of the def in editor */
 .cm-s-jupyter span.cm-def {
-  color: var(--jp-mirror-editor-def-color);
   font-weight: var(--jp-mirror-editor-def-font-weight);
 }
 
-/* Fix codeFolding */
-.CodeMirror-gutters, .cm-s-jupyter .CodeMirror-activeline-background, .cm-s-jupyter .CodeMirror-gutter {
-  border: none;
-  background-color: var(--jp-cell-editor-background);
-}
 
 .CodeMirror-foldmarker {
   color: var(--jp-mirror-editor-keyword-color);
   line-height: 0.3;
   cursor: pointer;
+  text-shadow: var(--jp-mirror-editor-keyword-color) 0px 0px 0px;
   font-weight: bold;
   font-size: medium;
   padding-left: 4px;
@@ -176,7 +176,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 .CodeMirror-gutters,
 .cm-s-jupyter .CodeMirror-activeline-background, .cm-s-jupyter .CodeMirror-gutter {
   border: none;
-  background-color: var(--tailwind-layout-color1);
+  background-color: var(--jp-cell-editor-background);
 }
 
 /* Error output print */

@@ -111,20 +111,20 @@ all of MD as it is not optimized for dense, information rich UIs.
   --tailwind-white: 255, 255, 255;
 
   /* Background */
-  --tailwind-background-color: var(--tailwind-grey-100);
+  --tailwind-background-color: var(--tailwind-grey-900);
   --tailwind-code-cell-color:var(--tailwind-grey-800);
-  --tailwind-base-font-color: var(--tailwind-black);
-  --tailwind-inverse-font-color: var(--tailwind-white);
+  --tailwind-base-font-color: var(--tailwind-grey-100);
+  --tailwind-inverse-font-color: var(--tailwind-grey-950);
 
   /* Main menu bar */
   --tailwind-menu-color: var(--tailwind-grey-900);
 
   /* Layout color */
-  --tailwind-layout-color0: rgb(var(--tailwind-white));
-  --tailwind-layout-color1: rgb(var(--tailwind-white));              /* Modified */
-  --tailwind-layout-color2: var(--tailwind-grey-800);              /* Modified */
-  --tailwind-layout-color3: var(--tailwind-indigo-800);            /* Modified */
-  --tailwind-layout-color4: var(--tailwind-grey-600);
+  --tailwind-layout-color0: var(--tailwind-grey-900);
+  --tailwind-layout-color1: var(--tailwind-grey-800);              /* Modified */
+  --tailwind-layout-color2: var(--tailwind-grey-700);              /* Modified */
+  --tailwind-layout-color3: var(--tailwind-grey-600);            /* Modified */
+  --tailwind-layout-color4: var(--tailwind-grey-500);
 
   --tailwind-inverse-layout-color2: var(--md-grey-800);
   --tailwind-inverse-layout-color3: var(--md-grey-500);            /* Modified */
@@ -223,10 +223,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(var(--tailwind-base-font-color), 1);
-  --jp-ui-font-color1: rgba(var(--tailwind-base-font-color), 0.87);
-  --jp-ui-font-color2: rgba(var(--tailwind-base-font-color), 0.54);
-  --jp-ui-font-color3: rgba(var(--tailwind-base-font-color), 0.38);
+  --jp-ui-font-color0: var(--tailwind-grey-100);
+  --jp-ui-font-color1: var(--tailwind-grey-200);
+  --jp-ui-font-color2: var(--tailwind-grey-300);
+  --jp-ui-font-color3: var(--tailwind-grey-400);
 
   /*
    * Use these against the brand/accent/warn/error colors.
@@ -265,10 +265,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(var(--tailwind-base-font-color), 1);
-  --jp-content-font-color1: rgba(var(--tailwind-base-font-color), 0.87);
-  --jp-content-font-color2: rgba(var(--tailwind-base-font-color), 0.54);
-  --jp-content-font-color3: rgba(var(--tailwind-base-font-color), 0.38);
+  --jp-content-font-color0: var(--tailwind-grey-100);
+  --jp-content-font-color1: var(--tailwind-grey-200);
+  --jp-content-font-color2: var(--tailwind-grey-300);
+  --jp-content-font-color3: var(--tailwind-grey-400);
 
   --jp-content-link-color: var(--tailwind-blue-700);
 
@@ -416,7 +416,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(var(--tailwind-base-font-color), 0.25);
+  --jp-dialog-background: var(--tailwind-grey-500);
 
   /* Console specific styles */
 
@@ -427,7 +427,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-toolbar-border-color: transparent;                   /* Modified */
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: transparent;                     /* Modified */
-  --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(var(--tailwind-base-font-color), 0.24);
+  --jp-toolbar-box-shadow: 0px 0px 2px 0px var(--tailwind-grey-500);
   --jp-toolbar-header-margin: 4px 4px 0px 4px;
   --jp-toolbar-active-background: var(--tailwind-grey-300);
 
@@ -448,21 +448,21 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* --jp-search-unselected-match-color: var(--); */
   --jp-search-unselected-match-background-color: var(--tailwind-green-200);
   --jp-editor-selected-focused-background: #d7d4f0;
-  --jp-editor-cursor-color: var(--jp-ui-font-color0);
+  --jp-editor-cursor-color: var(--tailwind-blue-600);
 
   /* Code mirror specific styles */
   --jp-mirror-editor-keyword-color:#ff4a4a;
   --jp-mirror-editor-atom-color: var(--tailwind-blue-300);
-  --jp-mirror-editor-number-color: #fc8c8c;
-  --jp-mirror-editor-def-color: #b9FF26;
-  --jp-mirror-editor-variable-color: #FFC86D;
+  --jp-mirror-editor-number-color: #ac80ff;
+  --jp-mirror-editor-def-color: #a6e22c;
+  --jp-mirror-editor-variable-color: #fd9621;
   --jp-mirror-editor-variable-2-color: var(--tailwind-blue-400);
   --jp-mirror-editor-variable-3-color: var(--tailwind-green-600);
   --jp-mirror-editor-punctuation-color: var(--tailwind-blue-400);
-  --jp-mirror-editor-property-color: #00DCFF;
-  --jp-mirror-editor-operator-color: #FF00D4;
+  --jp-mirror-editor-property-color: #67d8ef;
+  --jp-mirror-editor-operator-color:#f92472;
   --jp-mirror-editor-comment-color: #A4B3C2;
-  --jp-mirror-editor-string-color: #FF6900;
+  --jp-mirror-editor-string-color: #e7db74;
   --jp-mirror-editor-string-2-color: var(--tailwind-purple-300);
   --jp-mirror-editor-meta-color: #aa22ff;
   --jp-mirror-editor-qualifier-color: #555;
@@ -491,7 +491,9 @@ all of MD as it is not optimized for dense, information rich UIs.
 /* Mirror editor font styles */
 
 --jp-mirror-editor-comment-font-weight: normal;
---jp-mirror-editor-number-font-weight: bold;
+--jp-mirror-editor-number-font-weight: normal;
 --jp-mirror-editor-def-font-weight: bold;
+--cm-matchingbrackets-weight: bold;
+--cm-matchingbrackets-underline: none;
 
 }
