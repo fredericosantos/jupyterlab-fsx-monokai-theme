@@ -1,0 +1,1 @@
+jupyterlab-fsx-monokai-theme
