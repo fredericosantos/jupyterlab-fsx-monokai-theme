@@ -9,10 +9,10 @@ import { IThemeManager } from '@jupyterlab/apputils';
  * A plugin for myorg/jupyterlab-fsx-monokai-theme
  */
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: '@fsx/jupyterlab-fsx-monokai-theme:plugin',
+  id: '@fredericosantos/jupyterlab-fsx-monokai-theme:plugin',
   requires: [IThemeManager],
   activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
-    const style = '@fsx/jupyterlab-fsx-monokai-theme/index.css';
+    const style = '@fredericosantos/jupyterlab-fsx-monokai-theme/index.css';
 
     manager.register({
       name: 'FSX Monokai',
