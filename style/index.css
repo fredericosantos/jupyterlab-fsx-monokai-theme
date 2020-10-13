@@ -101,17 +101,50 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
   animation: none;
 }
 
+
+/* Highlighted text */
+
+.CodeMirror-selected {
+  background: #60606000;
+}
+span.CodeMirror-selectedtext {
+  background: #56514a;
+  padding-bottom: 1px;
+  padding-top: 2px;
+}
+
+/* Error code */
+
+.cm-s-jupyter span.cm-error {
+  color: var(--jp-mirror-editor-error-color);
+  background: white;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px #1b1b1b;
+}
+
 /* Change matching brackets */
 div.CodeMirror span.CodeMirror-matchingbracket {
   color: #b5ff00;
   font-weight: var(--cm-matchingbrackets-weight);
   text-decoration-line: var(--cm-matchingbrackets-underline);
+  background: #7c7c7c;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px #1b1b1b;
 }
 
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
-  color: #ff0000;
+  color: #ffffff;
   font-weight: var(--cm-matchingbrackets-weight);
   text-decoration-line: var(--cm-matchingbrackets-underline);
+  background: deeppink;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px #1b1b1b;
 }
 
 /* Removing italic from comments */
