@@ -147,6 +147,44 @@ span.CodeMirror-selectedtext {
     border-radius: var(--jp-border-radius);
 }
 
+/* Cells width */
+
+.jp-Notebook .jp-Cell {
+    max-width: 95%;
+    margin: auto;
+}
+
+/* Output cell stuff */
+
+.jp-RenderedText {
+    padding-left: initial;
+}
+
+.jp-OutputArea-output pre {
+    border-radius: var(--jp-border-radius);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    background-color: var(--tailwind-layout-color2);
+    padding: 10px;
+    word-break: break-all;
+    white-space: pre-wrap;
+    border-top-style: solid;
+    border-top-color: #282828;
+    border-top-width: 2px;
+}
+
+.jp-OutputArea-executeResult .jp-RenderedText.jp-OutputArea-output {
+    padding-top: 0px;
+}
+
+.jp-OutputArea-output.jp-RenderedHTMLCommon table {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Change matching brackets */
 div.CodeMirror span.CodeMirror-matchingbracket {
