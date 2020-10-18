@@ -94,7 +94,17 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 
 
 /* -- Editor -- */
+
 /* Change cursor color */
+
+.jp-CodeMirrorEditor[data-type='inline'] .CodeMirror-cursor {
+  border-radius: 2px;
+  padding-top: 2px;
+  box-shadow: 0px 1px 1px #1b1b1b;
+  margin-top: -1px;
+  border-left: 2px solid var(--jp-editor-cursor-color);
+}
+
 .cm-fat-cursor .CodeMirror-cursor,
 .cm-animate-fat-cursor {
   background: var(--jp-brand-color2);
@@ -105,8 +115,13 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 /* Highlighted text */
 
 .CodeMirror-selected {
-  background: #60606000;
+  background: var(--jp-selected-background);
 }
+
+.CodeMirror-focused .CodeMirror-selected {
+  background: var(--jp-selected-background);
+}
+
 span.CodeMirror-selectedtext {
   background: #56514a;
   padding-bottom: 1px;
@@ -124,16 +139,25 @@ span.CodeMirror-selectedtext {
   box-shadow: 0px 1px 2px #1b1b1b;
 }
 
+/* Output Error Code */
+
+.jp-RenderedText[data-mime-type='application/vnd.jupyter.stderr'] {
+    background: #653030;
+    padding-top: var(--jp-code-padding);
+    border-radius: var(--jp-border-radius);
+}
+
+
 /* Change matching brackets */
 div.CodeMirror span.CodeMirror-matchingbracket {
   color: #b5ff00;
   font-weight: var(--cm-matchingbrackets-weight);
   text-decoration-line: var(--cm-matchingbrackets-underline);
-  background: #7c7c7c;
+  background: var(--md-grey-700);
   padding-bottom: 2px;
   padding-top: 2px;
   border-radius: 2px;
-  box-shadow: 0px 1px 2px #1b1b1b;
+  /*box-shadow: 0px 1px 2px #1b1b1b;*/
 }
 
 div.CodeMirror span.CodeMirror-nonmatchingbracket {

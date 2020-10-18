@@ -294,8 +294,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-code-presentation-font-size: 16px;
 
   /* may need to tweak cursor width if you change font size */
-  --jp-code-cursor-width0: 1.4px;
-  --jp-code-cursor-width1: 2px;
+  --jp-code-cursor-width0: 3px;
+  --jp-code-cursor-width1: 4px;
   --jp-code-cursor-width2: 4px;
 
   /* Layout
@@ -332,10 +332,10 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent */
 
-  --jp-brand-color0: var(--tailwind-blue-700);
-  --jp-brand-color1: var(--tailwind-blue-500);                     /* Modified */
-  --jp-brand-color2: var(--tailwind-blue-300);
-  --jp-brand-color3: var(--tailwind-blue-100);
+  --jp-brand-color0: var(--tailwind-red-700);
+  --jp-brand-color1: var(--tailwind-red-500);                     /* Modified */
+  --jp-brand-color2: var(--tailwind-red-300);
+  --jp-brand-color3: var(--tailwind-red-100);
 
   --jp-accent-color0: var(--tailwind-green-700);
   --jp-accent-color1: var(--tailwind-green-500);
@@ -447,8 +447,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-search-selected-match-background-color: var(--tailwind-green-400);
   /* --jp-search-unselected-match-color: var(--); */
   --jp-search-unselected-match-background-color: var(--tailwind-green-200);
-  --jp-editor-selected-focused-background: #d7d4f0;
-  --jp-editor-cursor-color: var(--tailwind-blue-600);
+  --jp-editor-selected-focused-background: #d9d9d9;
+  --jp-editor-cursor-color: #ffab00;
 
   /* Code mirror specific styles */
   --jp-mirror-editor-keyword-color:#ff4a4a;
@@ -496,5 +496,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 --jp-mirror-editor-property-font-weight: bold;
 --cm-matchingbrackets-weight: bold;
 --cm-matchingbrackets-underline: none;
+--jp-selected-background: #60606000;
 
 }
