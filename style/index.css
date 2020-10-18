@@ -139,13 +139,6 @@ span.CodeMirror-selectedtext {
   box-shadow: 0px 1px 2px #1b1b1b;
 }
 
-/* Output Error Code */
-
-.jp-RenderedText[data-mime-type='application/vnd.jupyter.stderr'] {
-    background: #653030;
-    padding-top: var(--jp-code-padding);
-    border-radius: var(--jp-border-radius);
-}
 
 /* Cells width */
 
@@ -160,7 +153,7 @@ span.CodeMirror-selectedtext {
     padding-left: initial;
 }
 
-.jp-OutputArea-output pre {
+.jp-OutputArea-child .jp-OutputArea-output {
     border-radius: var(--jp-border-radius);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -177,9 +170,20 @@ span.CodeMirror-selectedtext {
     border-top-width: 2px;
 }
 
-.jp-OutputArea-executeResult .jp-RenderedText.jp-OutputArea-output {
-    padding-top: 0px;
+.jp-Cell:not(.jp-mod-noOutputs) .jp-Cell-outputWrapper {
+    margin-top: 0px;
 }
+
+/* .jp-OutputArea-executeResult .jp-RenderedText.jp-OutputArea-output {
+    background-color: var(--tailwind-layout-color2);
+} */
+
+/* Output Error Code */
+
+.jp-RenderedText[data-mime-type='application/vnd.jupyter.stderr'] {
+    background: #8e2b2b;
+}
+
 
 .jp-OutputArea-output.jp-RenderedHTMLCommon table {
     margin-left: auto;
@@ -278,9 +282,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Error output print */
-.jp-RenderedText[data-mime-type="application/vnd.jupyter.stderr"] {
-  padding: var(--jp-code-padding);
-}
+
+
 .jp-RenderedText pre .ansi-green-intense-fg {
   color: var(--mirror-editor-string-color); /* Error window description*/
 }
