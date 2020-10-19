@@ -111,8 +111,15 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
   animation: none;
 }
 
+.CodeMirror-cursor {
+  animation: blink 1s infinite normal;
+}
 
 /* Highlighted text */
+
+*::selection {
+  background: var(--jp-brand-color0);
+}
 
 .CodeMirror-selected {
   background: var(--jp-selected-background);
@@ -251,6 +258,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-InputArea-editor {
   border-radius: var(--jp-border-radius);
   padding: calc(var(--jp-code-padding) / 2);
+}
+
+.jp-InputArea {
+    padding-top: var(--jp-code-padding);
 }
 
 /* Search highlight - make 1px higher to cover grey background */
