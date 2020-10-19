@@ -14,6 +14,11 @@ Alpha stages of what I hope will become a great dark theme! I'm new to coding, n
 jupyter labextension install @fredericosantos/jupyterlab-fsx-monokai-theme
 ```
 
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/fredericosantos/jupyterlab-fsx-monokai-theme/main/screenshot.png)
+
+
 ## Development
 
 For a development install (requires npm version 4 or later), do the following in the repository directory:
