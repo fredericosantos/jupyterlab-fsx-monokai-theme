@@ -1,6 +1,6 @@
 {
   "name": "@fredericosantos/jupyterlab-fsx-monokai-theme",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Jupyterlab theme extension inspired by Monokai and Tailwind",
   "author": "Frederico Santos <fredericosantos+npm@gmail.com>",
   "keywords": [
