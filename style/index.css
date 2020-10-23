@@ -352,18 +352,22 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   background: unset;
 }
 
-.dataframe tbody tr:hover,
-.jp-RenderedHTMLCommon tbody tr:hover {
-  /* Odd row number - use same focus color when hovering */
-  background: rgba(66, 165, 245, 0.2);
-}
-
-.dataframe > tbody > tr > th {
+.dataframe tbody tr th {
   /* Index column(s) */
   color: var(--tailwind-layout-color4);
-  background-color: var(--tailwind-layout-color2);
+  background-color: var(--jp-layout-color3);
   vertical-align: middle !important;
   text-align: center;
+}
+
+.dataframe tbody tr th:hover,
+.jp-RenderedHTMLCommon tbody tr:hover {
+  /* Odd row number - use same focus color when hovering */
+  background: var(--jp-layout-color4);
+}
+
+.dataframe tbody tr td:hover {
+  background: var(--jp-brand-color1);
 }
 
 .reveal table th, .reveal table td {
