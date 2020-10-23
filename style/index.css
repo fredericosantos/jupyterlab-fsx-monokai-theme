@@ -170,8 +170,8 @@ span.CodeMirror-selectedtext {
     margin-inline-end: 10px;
     background-color: var(--tailwind-layout-color2);
     padding: 10px;
-    word-break: break-all;
-    white-space: pre-wrap;
+    /* word-break: break-all;
+    white-space: pre-wrap; */
     border-top-style: solid;
     border-top-color: #282828;
     border-top-width: 2px;
@@ -192,11 +192,6 @@ span.CodeMirror-selectedtext {
 }
 
 
-.jp-OutputArea-output.jp-RenderedHTMLCommon table {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Change matching brackets */
 div.CodeMirror span.CodeMirror-matchingbracket {
   color: #b5ff00;
@@ -206,7 +201,6 @@ div.CodeMirror span.CodeMirror-matchingbracket {
   padding-bottom: 2px;
   padding-top: 2px;
   border-radius: 2px;
-  /*box-shadow: 0px 1px 2px #1b1b1b;*/
 }
 
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
@@ -330,7 +324,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .dataframe thead,
 .jp-RenderedHTMLCommon thead {
   /* Table header color */
-  background-color: var(--tailwind-layout-color2);
+  background-color: var(--jp-layout-color3);
 }
 
 .dataframe thead th,
@@ -343,11 +337,14 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   white-space: nowrap;
 }
 
-.dataframe tr,
+/* Light-grey row separation line */
+
+/* .dataframe tr,
 .jp-RenderedHTMLCommon tr {
-  /* Light-grey row separation line */
+  
   border-bottom: 1px var(--tailwind-inverse-layout-color2) solid;
-}
+} 
+*/
 
 .dataframe tbody tr:nth-child(2n),
 .jp-RenderedHTMLCommon tbody tr:nth-child(2n) {

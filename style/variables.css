@@ -359,10 +359,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-success-color2: var(--tailwind-green-300);
   --jp-success-color3: var(--tailwind-green-100);
 
-  --jp-info-color0: var(--tailwind-indigo-700);
-  --jp-info-color1: var(--tailwind-indigo-500);
-  --jp-info-color2: var(--tailwind-indigo-300);
-  --jp-info-color3: var(--tailwind-indigo-100);
+  --jp-info-color0: var(--md-grey-50);
+  --jp-info-color1: var(--md-grey-300);
+  --jp-info-color2: var(--md-grey-600);
+  --jp-info-color3: var(--md-grey-800);
 
   /* Cell specific styles */
 
