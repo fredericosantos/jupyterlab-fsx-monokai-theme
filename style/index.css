@@ -266,11 +266,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   z-index: -10;           /* Position highlighting behind text */
 }
 
-/* Max-widht for main content/cell blocks */
-.jp-Notebook .jp-Cell {
-  max-width: 1000px;
-  margin: auto;
-}
 
 /* Input/Output number indicator */
 .jp-InputPrompt,
