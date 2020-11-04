@@ -18,19 +18,19 @@ pre {
 
 /* Background color */
 body {
-  background: var(--tailwind-background-color);
+  background: var(--fsx-grey-1000);
 }
 
 
 /* -- Top panel/menu bar -- */
 #jp-top-panel,
 .p-MenuBar {
-  background: var(--tailwind-menu-color);
+  background: var(--fsx-menu-color);
   color: white;
 }
 .p-MenuBar.p-mod-active .p-MenuBar-item.p-mod-active,
 .p-MenuBar-item:hover {
-  background: var(--tailwind-indigo-900);
+  background: var(--fsx-indigo-900);
   box-shadow: none;
 }
 .p-Menu {
@@ -46,26 +46,24 @@ body {
 /* Shrink tab width to content (remove space) */
 .p-DockPanel-tabBar .p-TabBar-tab {
   flex: none;
-  color: var(--tailwind-grey-500);
+  color: var(--fsx-grey-500);
 }
 
 
-/* -- File toolbar -- */
-/* Remove file toolbar shadow */
-.jp-Toolbar {
-  box-shadow: none;
-}
 
 /* File menu button hover */
 button.jp-Button.bp3-button.bp3-minimal:hover {
-  background: var(--tailwind-layout-color2);
+  background: var(--fsx-layout-color2);
 }
 
+.jp-Toolbar {
+  background: var(--jp-layout-color1);
+}
 
 /* -- Status bar (bottom) --  */
 /* Status bar background*/
 .f17wptjy {
-  background: var(--tailwind-grey-700);
+  background: var(--fsx-grey-700);
 }
 
 /* Status bar font color */
@@ -74,22 +72,32 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 }
 
 
+.lm-Menu-item.lm-mod-active {
+  background: var(--jp-layout-color4);
+}
+
+.p-MenuBar.p-mod-active .p-MenuBar-item.p-mod-active, .p-MenuBar-item:hover {
+  background: var(--jp-layout-color2);
+  box-shadow: none;
+  z-index: 1000;
+}
+
 /* -- Sidebar -- */
 /* Sidebar icon hover effect */
 .jp-SideBar .p-TabBar-tab:hover:not(.p-mod-current),
 .jp-SideBar .p-TabBar-tab:hover:not(.p-mod-current) path {
-  fill: var(--tailwind-layout-color3);
-  background: var(--tailwind-layout-color2);
+  fill: var(--fsx-layout-color3);
+  background: var(--fsx-layout-color2);
 }
 
 /* Selected sidebar icon color */
 .jp-SideBar .p-TabBar-tab.p-mod-current path {
-  fill: var(--tailwind-layout-color3);
+  fill: var(--fsx-layout-color3);
 }
 
 /* Main screen icon */
 .jp-icon-accent2[fill] {
-  fill: var(--tailwind-inverse-layout-color3);
+  fill: var(--fsx-inverse-layout-color3);
 }
 
 
@@ -168,7 +176,7 @@ span.CodeMirror-selectedtext {
     margin-top: 0px;
     margin-inline-start: 10px;
     margin-inline-end: 10px;
-    background-color: var(--tailwind-layout-color2);
+    background-color: var(--fsx-layout-color2);
     padding: 10px;
     /* word-break: break-all;
     white-space: pre-wrap; */
@@ -182,7 +190,7 @@ span.CodeMirror-selectedtext {
 }
 
 /* .jp-OutputArea-executeResult .jp-RenderedText.jp-OutputArea-output {
-    background-color: var(--tailwind-layout-color2);
+    background-color: var(--fsx-layout-color2);
 } */
 
 /* Output Error Code */
@@ -295,10 +303,21 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Search box */
+
+.jp-DocumentSearch-toggle-wrapper, .jp-DocumentSearch-button-wrapper, .jp
+
+.jp-DocumentSearch-overlay * {
+  color: var(--jp-ui-font-color1);
+  background-position: center;
+}
+
+
 .jp-DocumentSearch-overlay {
-  background-color: var(--tailwind-layout-color2);
+  background-color: var(--jp-layout-color2);
   box-shadow: var(--jp-elevation-z4);
   padding: var(--jp-cell-padding);
+  border-radius: var(--jp-border-radius);
+  width: 450px;
 }
 .jp-DocumentSearch-input-wrapper,
 .jp-DocumentSearch-replace-entry {
@@ -308,67 +327,35 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 /* Table style */
 /* .dataframe are typically pandas tables in cells while .jp-RenderedHTMLCommon are Markdown tables */
-.dataframe,
 .jp-RenderedHTMLCommon table {
-  background: var(--tailwind-layout-color1);
+  font-family: var(--jp-code-font-family);
   border-radius: var(--jp-border-radius);
   overflow: hidden;
   margin-top: var(--jp-code-padding);
 }
 
-.dataframe thead,
-.jp-RenderedHTMLCommon thead {
+.jp-RenderedHTMLCommon th {
   /* Table header color */
-  background-color: var(--jp-layout-color3);
+  background-color: var(--jp-layout-color4);
 }
 
-.dataframe thead th,
-.dataframe tbody td {
-  text-align: right;
+.jp-RenderedHTMLCommon tbody tr:nth-child(odd) {
+  background: var(--jp-layout-color1);
 }
 
-.dataframe td {
-  /* Prevent that table body cells wrap the content */
-  white-space: nowrap;
+.jp-RenderedHTMLCommon tbody tr:nth-child(even) {
+  background: var(--jp-rendermime-table-row-background);
 }
 
-/* Light-grey row separation line */
-
-/* .dataframe tr,
-.jp-RenderedHTMLCommon tr {
-  
-  border-bottom: 1px var(--tailwind-inverse-layout-color2) solid;
-} 
-*/
-
-.dataframe tbody tr:nth-child(2n),
-.jp-RenderedHTMLCommon tbody tr:nth-child(2n) {
-  /* Odd row number - do not color differently */
-  background: unset;
+.jp-RenderedHTMLCommon tbody tr:hover,
+.jp-RenderedHTMLCommon tbody tr:hover th{
+  background: var(--jp-rendermime-table-row-hover-background);
 }
 
-.dataframe tbody tr th {
-  /* Index column(s) */
-  color: var(--tailwind-layout-color4);
-  background-color: var(--jp-layout-color3);
-  vertical-align: middle !important;
-  text-align: center;
+.jp-RenderedHTMLCommon tbody tr td:hover {
+  background: var(--jp-accent-color0);
 }
 
-.dataframe tbody tr th:hover,
-.jp-RenderedHTMLCommon tbody tr:hover {
-  /* Odd row number - use same focus color when hovering */
-  background: var(--jp-layout-color4);
-}
-
-.dataframe tbody tr td:hover {
-  background: var(--jp-brand-color1);
-}
-
-.reveal table th, .reveal table td {
-  /*Ignore table border setting in RISE presentation */
-  border-bottom: none;
-}
 
 /* Plots */
 /* Matplotlib */
@@ -378,5 +365,5 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 /* Command palette */
 .p-CommandPalette-item.p-mod-active {
-  background: var(--tailwind-inverse-layout-color2);
+  background: var(--fsx-inverse-layout-color2);
 }

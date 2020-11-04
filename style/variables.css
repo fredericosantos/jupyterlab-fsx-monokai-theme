@@ -25,109 +25,120 @@ all of MD as it is not optimized for dense, information rich UIs.
 */
 
 :root {
+  --fsx-grey-100: #fafafa;
+  --fsx-grey-200: #dfdfdf;
+  --fsx-grey-300: #c2c2c2;
+  --fsx-grey-400: #a1a1a1;
+  --fsx-grey-500: #777777;
+  --fsx-grey-600: #5a5a5a;
+  --fsx-grey-700: #3a3a3a;
+  --fsx-grey-800: #303030;
+  --fsx-grey-900: #242424;
+  --fsx-grey-950: #161616;
+  --fsx-grey-1000: #0e0e0e;
   
-  --tailwind-grey-100: #fafafa;
-  --tailwind-grey-200: #dfdfdf;
-  --tailwind-grey-300: #c2c2c2;
-  --tailwind-grey-400: #a1a1a1;
-  --tailwind-grey-500: #777777;
-  --tailwind-grey-600: #5a5a5a;
-  --tailwind-grey-700: #3a3a3a;
-  --tailwind-grey-800: #303030;
-  --tailwind-grey-900: #242424;
-  --tailwind-grey-950: #161616;   /* Newly defined */
+  --fsx-grey-100: #fafafa;
+  --fsx-grey-200: #dfdfdf;
+  --fsx-grey-300: #c2c2c2;
+  --fsx-grey-400: #a1a1a1;
+  --fsx-grey-500: #777777;
+  --fsx-grey-600: #5a5a5a;
+  --fsx-grey-700: #3a3a3a;
+  --fsx-grey-800: #303030;
+  --fsx-grey-900: #242424;
+  --fsx-grey-950: #161616;   /* Newly defined */
 
-  --tailwind-blue-100: #EBF8FF;
-  --tailwind-blue-200: #BEE3F8;
-  --tailwind-blue-300: #90CDF4;
-  --tailwind-blue-400: #63B3ED;
-  --tailwind-blue-500: #4299E1;
-  --tailwind-blue-600: #3182CE;
-  --tailwind-blue-700: #2B6CB0;
-  --tailwind-blue-800: #2C5282;
-  --tailwind-blue-900: #2A4365;
+  --fsx-blue-100: #EBF8FF;
+  --fsx-blue-200: #BEE3F8;
+  --fsx-blue-300: #90CDF4;
+  --fsx-blue-400: #63B3ED;
+  --fsx-blue-500: #4299E1;
+  --fsx-blue-600: #3182CE;
+  --fsx-blue-700: #2B6CB0;
+  --fsx-blue-800: #2C5282;
+  --fsx-blue-900: #2A4365;
 
-  --tailwind-indigo-100: #fafafa;
-  --tailwind-indigo-200: #f5f5f5;
-  --tailwind-indigo-300: #ececec;
-  --tailwind-indigo-400: #e4e4e4;
-  --tailwind-indigo-500: #bebebe;
-  --tailwind-indigo-600: #919191;
-  --tailwind-indigo-700: #646464;
-  --tailwind-indigo-800: #494949;
-  --tailwind-indigo-900: #2c2c2c;
+  --fsx-indigo-100: #fafafa;
+  --fsx-indigo-200: #f5f5f5;
+  --fsx-indigo-300: #ececec;
+  --fsx-indigo-400: #e4e4e4;
+  --fsx-indigo-500: #bebebe;
+  --fsx-indigo-600: #919191;
+  --fsx-indigo-700: #646464;
+  --fsx-indigo-800: #494949;
+  --fsx-indigo-900: #2c2c2c;
 
-  --tailwind-purple-100: #fafafa;
-  --tailwind-purple-200: #f5f5f5;
-  --tailwind-purple-300: #ececec;
-  --tailwind-purple-400: #e4e4e4;
-  --tailwind-purple-500: #bebebe;
-  --tailwind-purple-600: #919191;
-  --tailwind-purple-700: #646464;
-  --tailwind-purple-800: #494949;
-  --tailwind-purple-900: #2c2c2c;
+  --fsx-purple-100: #fafafa;
+  --fsx-purple-200: #f5f5f5;
+  --fsx-purple-300: #ececec;
+  --fsx-purple-400: #e4e4e4;
+  --fsx-purple-500: #bebebe;
+  --fsx-purple-600: #919191;
+  --fsx-purple-700: #646464;
+  --fsx-purple-800: #494949;
+  --fsx-purple-900: #2c2c2c;
 
-  --tailwind-green-100: #F0FFF4;
-  --tailwind-green-200: #C6F6D5;
-  --tailwind-green-300: #9AE6B4;
-  --tailwind-green-400: #68D391;
-  --tailwind-green-500: #48BB78;
-  --tailwind-green-600: #38A169;
-  --tailwind-green-700: #2F855A;
-  --tailwind-green-800: #276749;
-  --tailwind-green-900: #22543D;
+  --fsx-green-100: #F0FFF4;
+  --fsx-green-200: #C6F6D5;
+  --fsx-green-300: #9AE6B4;
+  --fsx-green-400: #68D391;
+  --fsx-green-500: #48BB78;
+  --fsx-green-600: #38A169;
+  --fsx-green-700: #2F855A;
+  --fsx-green-800: #276749;
+  --fsx-green-900: #22543D;
 
-  --tailwind-orange-100: #FFFAF0;
-  --tailwind-orange-200: #FEEBC8;
-  --tailwind-orange-300: #FBD38D;
-  --tailwind-orange-400: #F6AD55;
-  --tailwind-orange-500: #ED8936;
-  --tailwind-orange-600: #DD6B20;
-  --tailwind-orange-700: #C05621;
-  --tailwind-orange-800: #9C4221;
-  --tailwind-orange-900: #7B341E;
+  --fsx-orange-100: #FFFAF0;
+  --fsx-orange-200: #FEEBC8;
+  --fsx-orange-300: #FBD38D;
+  --fsx-orange-400: #F6AD55;
+  --fsx-orange-500: #ED8936;
+  --fsx-orange-600: #DD6B20;
+  --fsx-orange-700: #C05621;
+  --fsx-orange-800: #9C4221;
+  --fsx-orange-900: #7B341E;
 
-  --tailwind-yellow-100: #FFFFF0;
-  --tailwind-yellow-200: #FEFCBF;
-  --tailwind-yellow-300: #FAF089;
-  --tailwind-yellow-400: #F6E05E;
-  --tailwind-yellow-500: #ECC94B;
-  --tailwind-yellow-600: #D69E2E;
-  --tailwind-yellow-700: #B7791F;
-  --tailwind-yellow-800: #975A16;
-  --tailwind-yellow-900: #744210;
+  --fsx-yellow-100: #FFFFF0;
+  --fsx-yellow-200: #FEFCBF;
+  --fsx-yellow-300: #FAF089;
+  --fsx-yellow-400: #F6E05E;
+  --fsx-yellow-500: #ECC94B;
+  --fsx-yellow-600: #D69E2E;
+  --fsx-yellow-700: #B7791F;
+  --fsx-yellow-800: #975A16;
+  --fsx-yellow-900: #744210;
 
-  --tailwind-red-100: #FFF5F5;
-  --tailwind-red-200: #FED7D7;
-  --tailwind-red-300: #FEB2B2;
-  --tailwind-red-400: #FC8181;
-  --tailwind-red-500: #F56565;
-  --tailwind-red-600: #E53E3E;
-  --tailwind-red-700: #C53030;
-  --tailwind-red-800: #9B2C2C;
-  --tailwind-red-900: #742A2A;
+  --fsx-red-100: #FFF5F5;
+  --fsx-red-200: #FED7D7;
+  --fsx-red-300: #FEB2B2;
+  --fsx-red-400: #FC8181;
+  --fsx-red-500: #F56565;
+  --fsx-red-600: #E53E3E;
+  --fsx-red-700: #C53030;
+  --fsx-red-800: #9B2C2C;
+  --fsx-red-900: #742A2A;
 
-  --tailwind-black: 9, 11, 15;
-  --tailwind-white: 255, 255, 255;
+  --fsx-black: 9, 11, 15;
+  --fsx-white: 255, 255, 255;
 
   /* Background */
-  --tailwind-background-color: var(--tailwind-grey-900);
-  --tailwind-code-cell-color:var(--tailwind-grey-800);
-  --tailwind-base-font-color: var(--tailwind-grey-100);
-  --tailwind-inverse-font-color: var(--tailwind-grey-950);
+  --fsx-background-color: var(--fsx-grey-900);
+  --fsx-code-cell-color:var(--fsx-grey-800);
+  --fsx-base-font-color: var(--fsx-grey-100);
+  --fsx-inverse-font-color: var(--fsx-grey-950);
 
   /* Main menu bar */
-  --tailwind-menu-color: var(--tailwind-grey-900);
+  --fsx-menu-color: var(--fsx-grey-900);
 
   /* Layout color */
-  --tailwind-layout-color0: var(--tailwind-grey-900);
-  --tailwind-layout-color1: var(--tailwind-grey-800);              /* Modified */
-  --tailwind-layout-color2: var(--tailwind-grey-700);              /* Modified */
-  --tailwind-layout-color3: var(--tailwind-grey-600);            /* Modified */
-  --tailwind-layout-color4: var(--tailwind-grey-500);
+  --fsx-layout-color0: var(--fsx-grey-900);
+  --fsx-layout-color1: var(--fsx-grey-800);              /* Modified */
+  --fsx-layout-color2: var(--fsx-grey-700);              /* Modified */
+  --fsx-layout-color3: var(--fsx-grey-600);            /* Modified */
+  --fsx-layout-color4: var(--fsx-grey-500);
 
-  --tailwind-inverse-layout-color2: var(--md-grey-800);
-  --tailwind-inverse-layout-color3: var(--md-grey-500);            /* Modified */
+  --fsx-inverse-layout-color2: var(--md-grey-800);
+  --fsx-inverse-layout-color3: var(--md-grey-500);            /* Modified */
 
   /* -- Pre-existing variables as defined by JupyterLab -- */
   /* Elevation
@@ -194,8 +205,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-border-width: 1px;
   --jp-border-color0: transparent;          /* Modified */
   --jp-border-color1: transparent;          /* Modified */
-  --jp-border-color2: var(--tailwind-grey-300);
-  --jp-border-color3: var(--tailwind-grey-200);
+  --jp-border-color2: var(--fsx-grey-300);
+  --jp-border-color3: var(--fsx-grey-200);
   --jp-border-radius: 8px;
 
   /* UI Fonts
@@ -223,20 +234,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: var(--tailwind-grey-100);
-  --jp-ui-font-color1: var(--tailwind-grey-200);
-  --jp-ui-font-color2: var(--tailwind-grey-300);
-  --jp-ui-font-color3: var(--tailwind-grey-400);
+  --jp-ui-font-color0: var(--fsx-grey-100);
+  --jp-ui-font-color1: var(--fsx-grey-200);
+  --jp-ui-font-color2: var(--fsx-grey-300);
+  --jp-ui-font-color3: var(--fsx-grey-400);
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(var(--tailwind-inverse-font-color), 1);
-  --jp-ui-inverse-font-color1: rgba(var(--tailwind-inverse-font-color), 1);
-  --jp-ui-inverse-font-color2: rgba(var(--tailwind-inverse-font-color), 0.7);
-  --jp-ui-inverse-font-color3: rgba(var(--tailwind-inverse-font-color), 0.5);
+  --jp-ui-inverse-font-color0: rgba(var(--fsx-inverse-font-color), 1);
+  --jp-ui-inverse-font-color1: rgba(var(--fsx-inverse-font-color), 1);
+  --jp-ui-inverse-font-color2: rgba(var(--fsx-inverse-font-color), 0.7);
+  --jp-ui-inverse-font-color3: rgba(var(--fsx-inverse-font-color), 0.5);
 
   /* Content Fonts
    *
@@ -265,12 +276,12 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: var(--tailwind-grey-100);
-  --jp-content-font-color1: var(--tailwind-grey-200);
-  --jp-content-font-color2: var(--tailwind-grey-300);
-  --jp-content-font-color3: var(--tailwind-grey-400);
+  --jp-content-font-color0: var(--fsx-grey-100);
+  --jp-content-font-color1: var(--fsx-grey-200);
+  --jp-content-font-color2: var(--fsx-grey-300);
+  --jp-content-font-color3: var(--fsx-grey-400);
 
-  --jp-content-link-color: var(--tailwind-blue-700);
+  --jp-content-link-color: var(--fsx-blue-700);
 
   --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -304,11 +315,15 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: var(--tailwind-layout-color0);
-  --jp-layout-color1: var(--tailwind-layout-color1);
-  --jp-layout-color2: var(--tailwind-layout-color2);
-  --jp-layout-color3: var(--tailwind-layout-color3);
-  --jp-layout-color4: var(--tailwind-layout-color4);
+  --jp-layout-color0: var(--fsx-grey-950);
+  --jp-layout-color1: var(--fsx-grey-900);
+  --jp-layout-color2: var(--fsx-grey-800);
+  --jp-layout-color3: var(--fsx-grey-700);
+  --jp-layout-color4: var(--fsx-grey-600);
+  --jp-layout-color5: var(--fsx-grey-500)
+
+
+
 
   /* Inverse Layout
    *
@@ -316,11 +331,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: var(--tailwind-grey-900);
-  --jp-inverse-layout-color1: var(--tailwind-grey-900);
-  --jp-inverse-layout-color2: var(--tailwind-grey-200);             /* Modified */
-  --jp-inverse-layout-color3: var(--tailwind-inverse-layout-color3);            /* Modified  - toolbar button colors*/
-  --jp-inverse-layout-color4: var(--tailwind-grey-600);
+  --jp-inverse-layout-color0: var(--fsx-grey-900);
+  --jp-inverse-layout-color1: var(--fsx-grey-900);
+  --jp-inverse-layout-color2: var(--fsx-grey-200);             /* Modified */
+  --jp-inverse-layout-color3: var(--fsx-inverse-layout-color3);            /* Modified  - toolbar button colors*/
+  --jp-inverse-layout-color4: var(--fsx-grey-600);
 
   /* Main menu
    * Add color and missing icon
@@ -332,32 +347,32 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent */
 
-  --jp-brand-color0: var(--tailwind-red-700);
-  --jp-brand-color1: var(--tailwind-red-500);                     /* Modified */
-  --jp-brand-color2: var(--tailwind-red-300);
-  --jp-brand-color3: var(--tailwind-red-100);
+  --jp-brand-color0: var(--fsx-red-700);
+  --jp-brand-color1: var(--fsx-red-500);                     /* Modified */
+  --jp-brand-color2: var(--fsx-red-300);
+  --jp-brand-color3: var(--fsx-red-100);
 
-  --jp-accent-color0: var(--tailwind-green-700);
-  --jp-accent-color1: var(--tailwind-green-500);
-  --jp-accent-color2: var(--tailwind-green-300);
-  --jp-accent-color3: var(--tailwind-green-100);
+  --jp-accent-color0: var(--fsx-red-700);
+  --jp-accent-color1: var(--fsx-red-600);
+  --jp-accent-color2: var(--fsx-red-500);
+  --jp-accent-color3: var(--fsx-red-400);
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: var(--tailwind-orange-500);
-  --jp-warn-color1: var(--tailwind-orange-500);
-  --jp-warn-color2: var(--tailwind-orange-300);
-  --jp-warn-color3: var(--tailwind-orange-100);
+  --jp-warn-color0: var(--fsx-orange-500);
+  --jp-warn-color1: var(--fsx-orange-500);
+  --jp-warn-color2: var(--fsx-orange-300);
+  --jp-warn-color3: var(--fsx-orange-100);
 
-  --jp-error-color0: var(--tailwind-red-700);
-  --jp-error-color1: var(--tailwind-red-500);
-  --jp-error-color2: var(--tailwind-red-300);
-  --jp-error-color3: var(--tailwind-red-100);
+  --jp-error-color0: var(--fsx-red-700);
+  --jp-error-color1: var(--fsx-red-500);
+  --jp-error-color2: var(--fsx-red-300);
+  --jp-error-color3: var(--fsx-red-100);
 
-  --jp-success-color0: var(--tailwind-green-700);
-  --jp-success-color1: var(--tailwind-green-500);
-  --jp-success-color2: var(--tailwind-green-300);
-  --jp-success-color3: var(--tailwind-green-100);
+  --jp-success-color0: var(--fsx-green-700);
+  --jp-success-color1: var(--fsx-green-500);
+  --jp-success-color2: var(--fsx-green-300);
+  --jp-success-color3: var(--fsx-green-100);
 
   --jp-info-color0: var(--md-grey-50);
   --jp-info-color1: var(--md-grey-300);
@@ -372,10 +387,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
 
-  --jp-cell-editor-background: var(--tailwind-code-cell-color);
+  --jp-cell-editor-background: var(--fsx-code-cell-color);
   --jp-cell-editor-border-color: transparent;                       /* Modified*/
-  --jp-cell-editor-box-shadow: inset 0 0 2px var(--tailwind-blue-300);
-  --jp-cell-editor-active-background: var(--tailwind-code-cell-color);           /* Modified */
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--fsx-blue-300);
+  --jp-cell-editor-active-background: var(--fsx-code-cell-color);           /* Modified */
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
 
   --jp-cell-prompt-width: 64px;
@@ -395,7 +410,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: var(--tailwind-blue-100);
+  --jp-notebook-multiselected-color: var(--fsx-blue-100);
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -403,20 +418,17 @@ all of MD as it is not optimized for dense, information rich UIs.
   pixel so that no scrollbar appears if we have just one single-line cell in the
   notebook. This padding is to enable a 'scroll past end' feature in a notebook.
   */
-  --jp-notebook-scroll-padding: calc(
-    100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
-      var(--jp-code-padding) - var(--jp-cell-padding) - 1px
-  );
+  --jp-notebook-scroll-padding: 20%
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: var(--tailwind-red-200);
-  --jp-rendermime-table-row-background: var(--tailwind-grey-100);
-  --jp-rendermime-table-row-hover-background: var(--tailwind-blue-100);
+  --jp-rendermime-error-background: var(--fsx-red-700);
+  --jp-rendermime-table-row-background: var(--jp-layout-color2);
+  --jp-rendermime-table-row-hover-background: var(--jp-layout-color0);
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: var(--tailwind-grey-500);
+  --jp-dialog-background: var(--fsx-grey-500);
 
   /* Console specific styles */
 
@@ -427,16 +439,16 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-toolbar-border-color: transparent;                   /* Modified */
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: transparent;                     /* Modified */
-  --jp-toolbar-box-shadow: 0px 0px 2px 0px var(--tailwind-grey-500);
+  --jp-toolbar-box-shadow: 0px 0px 2px 0px var(--fsx-grey-500);
   --jp-toolbar-header-margin: 4px 4px 0px 4px;
-  --jp-toolbar-active-background: var(--tailwind-grey-300);
+  --jp-toolbar-active-background: var(--fsx-grey-300);
 
   /* Input field styles */
 
   --jp-input-box-shadow: none;                              /* Modified */
   --jp-input-active-background: var(--jp-layout-color1);
   --jp-input-hover-background: var(--jp-layout-color1);
-  --jp-input-background: var(--tailwind-background-color);
+  --jp-input-background: var(--fsx-background-color);
   --jp-input-border-color: var(--jp-border-color1);
   --jp-input-active-border-color: var(--jp-brand-color1);
 
@@ -444,42 +456,42 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-editor-selected-background: #d9d9d9;
   /* --jp-search-selected-match-color: var(--); */
-  --jp-search-selected-match-background-color: var(--tailwind-green-400);
+  --jp-search-selected-match-background-color: var(--fsx-green-400);
   /* --jp-search-unselected-match-color: var(--); */
-  --jp-search-unselected-match-background-color: var(--tailwind-green-200);
+  --jp-search-unselected-match-background-color: var(--fsx-green-200);
   --jp-editor-selected-focused-background: #d9d9d9;
   --jp-editor-cursor-color: #ffab00;
 
   /* Code mirror specific styles */
   --jp-mirror-editor-keyword-color:#ff4a4a;
-  --jp-mirror-editor-atom-color: var(--tailwind-blue-300);
+  --jp-mirror-editor-atom-color: var(--fsx-blue-300);
   --jp-mirror-editor-number-color: #ac80ff;
   --jp-mirror-editor-def-color: #a6e22c;
   --jp-mirror-editor-variable-color: #fd9621;
-  --jp-mirror-editor-variable-2-color: var(--tailwind-blue-400);
-  --jp-mirror-editor-variable-3-color: var(--tailwind-green-600);
-  --jp-mirror-editor-punctuation-color: var(--tailwind-blue-400);
+  --jp-mirror-editor-variable-2-color: var(--fsx-blue-400);
+  --jp-mirror-editor-variable-3-color: var(--fsx-green-600);
+  --jp-mirror-editor-punctuation-color: var(--fsx-blue-400);
   --jp-mirror-editor-property-color: #67d8ef;
   --jp-mirror-editor-operator-color:#f92472;
   --jp-mirror-editor-comment-color: #A4B3C2;
   --jp-mirror-editor-string-color: #e7db74;
-  --jp-mirror-editor-string-2-color: var(--tailwind-purple-300);
+  --jp-mirror-editor-string-2-color: var(--fsx-purple-300);
   --jp-mirror-editor-meta-color: #aa22ff;
   --jp-mirror-editor-qualifier-color: #555;
   --jp-mirror-editor-builtin-color: #9655ff;
   --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: var(--tailwind-green-700);
-  --jp-mirror-editor-attribute-color: var(--tailwind-blue-700);
-  --jp-mirror-editor-header-color: var(--tailwind-blue-500);
-  --jp-mirror-editor-quote-color: var(--tailwind-green-300);
-  --jp-mirror-editor-link-color: var(--tailwind-blue-700);
+  --jp-mirror-editor-tag-color: var(--fsx-green-700);
+  --jp-mirror-editor-attribute-color: var(--fsx-blue-700);
+  --jp-mirror-editor-header-color: var(--fsx-blue-500);
+  --jp-mirror-editor-quote-color: var(--fsx-green-300);
+  --jp-mirror-editor-link-color: var(--fsx-blue-700);
   --jp-mirror-editor-error-color: #f00;
   --jp-mirror-editor-hr-color: #999;
 
 
   /* Vega extension styles */
 
-  --jp-vega-background: var(--tailwind-layout-color0);
+  --jp-vega-background: var(--fsx-layout-color0);
 
   /* Sidebar-related styles */
 
@@ -497,5 +509,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 --cm-matchingbrackets-weight: bold;
 --cm-matchingbrackets-underline: none;
 --jp-selected-background: #60606000;
-
+--jp-search-toggle-off-opacity: 0.5;
+--jp-search-toggle-on-opacity: 1.0;
 }
