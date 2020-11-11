@@ -14,7 +14,7 @@ Alpha stages of what I hope will become a great dark theme! I'm new to coding, n
 jupyter labextension install @fredericosantos/jupyterlab-fsx-monokai-theme
 ```
 
-## Screenshot
+## Video
 
 [![](http://img.youtube.com/vi/n3GrOvEzXyI/0.jpg)](http://www.youtube.com/watch?v=n3GrOvEzXyI "Video")
 
