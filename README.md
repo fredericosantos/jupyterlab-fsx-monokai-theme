@@ -16,7 +16,7 @@ jupyter labextension install @fredericosantos/jupyterlab-fsx-monokai-theme
 
 ## Video
 
-[![](http://img.youtube.com/vi/n3GrOvEzXyI/0.jpg)](http://www.youtube.com/watch?v=n3GrOvEzXyI "Video")
+[![](https://raw.githubusercontent.com/fredericosantos/jupyterlab-fsx-monokai-theme/main/fsx_monokai_theme.gif "Video")
 
 
 ## Development
