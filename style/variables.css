@@ -117,13 +117,14 @@ all of MD as it is not optimized for dense, information rich UIs.
   --fsx-red-700: #C53030;
   --fsx-red-800: #9B2C2C;
   --fsx-red-900: #742A2A;
+  --fsx-red-950: #5a0606;
 
   --fsx-black: 9, 11, 15;
   --fsx-white: 255, 255, 255;
 
   /* Background */
   --fsx-background-color: var(--fsx-grey-900);
-  --fsx-code-cell-color:var(--fsx-grey-800);
+  --fsx-code-cell-color:var(--fsx-grey-900);
   --fsx-base-font-color: var(--fsx-grey-100);
   --fsx-inverse-font-color: var(--fsx-grey-950);
 
@@ -385,13 +386,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-cell-collapser-width: 4px;                                   /* Modified*/
   --jp-cell-collapser-min-height: 20px;
-  --jp-cell-collapser-not-active-hover-opacity: 0.6;
+  --jp-cell-collapser-not-active-hover-opacity: 1.0;
 
   --jp-cell-editor-background: var(--fsx-code-cell-color);
   --jp-cell-editor-border-color: transparent;                       /* Modified*/
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--fsx-blue-300);
   --jp-cell-editor-active-background: var(--fsx-code-cell-color);           /* Modified */
-  --jp-cell-editor-active-border-color: transparent;
+  --jp-cell-editor-active-border-color: var(--fsx-red-900);
 
   --jp-cell-prompt-width: 64px;
   --jp-cell-prompt-font-family: var(--jp-code-font-family);
@@ -456,11 +457,11 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-editor-selected-background: #d9d9d9;
   /* --jp-search-selected-match-color: var(--); */
-  --jp-search-selected-match-background-color: var(--fsx-green-400);
+  --jp-search-selected-match-background-color: var(--fsx-red-700);
   /* --jp-search-unselected-match-color: var(--); */
-  --jp-search-unselected-match-background-color: var(--fsx-green-200);
+  --jp-search-unselected-match-background-color: var(--fsx-red-950);
   --jp-editor-selected-focused-background: #d9d9d9;
-  --jp-editor-cursor-color: #ffab00;
+  --jp-editor-cursor-color: white;
 
   /* Code mirror specific styles */
   --jp-mirror-editor-keyword-color:#ff4a4a;
