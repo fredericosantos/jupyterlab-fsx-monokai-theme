@@ -1,3 +1,4 @@
+
 /*-----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
@@ -106,10 +107,10 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 /* Change cursor color */
 
 .jp-CodeMirrorEditor[data-type='inline'] .CodeMirror-cursor {
-  border-radius: 2px;
-  padding-top: 2px;
+/*   border-radius: 1px; */
+/*   padding-top: 2px; */
   box-shadow: 0px 1px 1px #1b1b1b;
-  margin-top: -1px;
+/*   margin-top: -1px; */
   border-left: 2px solid var(--jp-editor-cursor-color);
 }
 
@@ -120,8 +121,26 @@ button.jp-Button.bp3-button.bp3-minimal:hover {
 }
 
 .CodeMirror-cursor {
-  animation: blink 1s infinite normal;
+  animation: blink 1s infinite linear;
 }
+
+@-moz-keyframes blink {
+  0% {opacity: 1}
+  50% {opacity: 0}
+  100% {opacity: 1}
+}
+@-webkit-keyframes blink {
+  0% {opacity: 1}
+  50% {opacity: 0}
+  100% {opacity: 1}
+}
+@keyframes blink {
+  0% {opacity: 1}
+  50% {opacity: 0}
+  100% {opacity: 1}
+}
+
+
 
 /* Highlighted text */
 
@@ -177,13 +196,13 @@ span.CodeMirror-selectedtext {
     margin-top: 0px;
     margin-inline-start: 10px;
     margin-inline-end: 10px;
-    background-color: var(--fsx-layout-color2);
+    background-color: #1e1e1e;
     padding: 10px;
     /* word-break: break-all;
     white-space: pre-wrap; */
     border-top-style: solid;
-    border-top-color: #282828;
-    border-top-width: 2px;
+    border-top-color: #1a1a1a;
+    border-top-width: 4px;
     /* padding-top: 22px; */
 }
 
@@ -207,7 +226,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
   color: #b5ff00;
   font-weight: var(--cm-matchingbrackets-weight);
   text-decoration-line: var(--cm-matchingbrackets-underline);
-  background: var(--md-grey-700);
+  background: var(--md-grey-800);
   padding-bottom: 2px;
   padding-top: 2px;
   border-radius: 2px;
@@ -244,19 +263,41 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .CodeMirror-foldmarker {
-  color: var(--jp-mirror-editor-keyword-color);
-  line-height: 0.3;
+  color: var(--jp-accent-color2);
+  /* line-height: 1; */
   cursor: pointer;
-  text-shadow: var(--jp-mirror-editor-keyword-color) 0px 0px 0px;
-  font-weight: bold;
+  text-shadow: none;
+  font-size: small;
+  visibility: hidden;
+
+}
+
+.CodeMirror-foldmarker::after {
+  visibility: visible;
+/*   content: "⮧"; */
+  content: "⬎";
+  padding: 1px 8px 1px 8px;
+  vertical-align: middle;
   font-size: medium;
-  padding-left: 4px;
+  border-radius: calc(var(--jp-border-radius)/1);
+  background: var(--jp-layout-color2);
+  box-shadow: var(--jp-elevation-z1);
 }
 
 /* Prevent cursor blinking */
-/* .CodeMirror-focused .CodeMirror-cursors {
+.CodeMirror-focused .CodeMirror-cursors {
   visibility: visible !important;
-} */
+}
+
+
+/* Active Cell  */
+
+jp-Notebook.jp-mod-editMode .jp-Cell.jp-mod-active .jp-InputArea-editor {
+    /* border: var(--jp-border-width) solid var(--fsx-red-900); */
+    box-shadow: var(--jp-input-box-shadow);
+    border-inline-end: 4px solid var(--fsx-red-800);
+    background-color: var(--jp-cell-editor-active-background);
+}
 
 /* Input cell area */
 .jp-InputArea-editor {
@@ -285,7 +326,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   margin-top: 0px;
   height: fit-content;
   z-index: 4;
-  background: var(--jp-brand-color0);
+  background: var(--fsx-red-900);
   font-weight: bold;
   position: absolute;
   border-radius: calc(var(--jp-border-radius)/2);
@@ -302,11 +343,12 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 /* Set code line number background and remove border line */
-.CodeMirror-gutters,
-.cm-s-jupyter .CodeMirror-activeline-background, .cm-s-jupyter .CodeMirror-gutter {
-  border: none;
-  background-color: var(--jp-cell-editor-background);
+.CodeMirror-gutters, .cm-s-jupyter .CodeMirror-activeline-background, .cm-s-jupyter .CodeMirror-gutter {
+    border-right: 1px solid var(--fsx-layout-color1);
+    background-color: transparent;
+    margin-left: -1px;
 }
+
 
 /* Error output print */
 
@@ -409,10 +451,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 
 .jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser {
-    background: var(--jp-accent-color1);
+    background: var(--fsx-red-900);
 }
 
-.jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser:hover {
+.jp-Notebook .jp-Collapser:hover {
     cursor: pointer;
 }
 
@@ -444,24 +486,69 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .lm-Widget.p-Widget.jp-Placeholder.jp-InputPlaceholder {
     margin-top: 0px;
     padding-top: 0px;
-    background: var(--fsx-layout-color1);
+    background: var(--fsx-layout-color0);
     box-shadow: var(--jp-elevation-z6);
     border-radius: var(--jp-border-radius);
-
 }
 
 .lm-Widget.p-Widget.jp-Placeholder.jp-InputPlaceholder:hover {
-    background: var(--fsx-layout-color2);
+    background: var(--fsx-layout-color1);
 
 }
 
 .lm-Widget.p-Widget.jp-Placeholder.jp-OutputPlaceholder {
     margin: 0 10px;
-    background: var(--fsx-layout-color2);
+    background: var(--fsx-layout-color1);
     border-radius: 0 0 var(--jp-border-radius) var(--jp-border-radius);
     box-shadow: var(--jp-elevation-z6);
+    border-top-style: solid;
+    border-top-color: #1a1a1a;
+    border-top-width: 4px;
 }
 
 .lm-Widget.p-Widget.jp-Placeholder.jp-OutputPlaceholder:hover {
-    background: var(--fsx-layout-color3);
+    background: var(--fsx-layout-color2);
+}
+
+
+.jp-Cell.jp-mod-active:not(.jp-mod-noOutputs) .jp-OutputCollapser::before,
+.jp-Cell.jp-mod-active .jp-InputCollapser::before {
+    content: "\25BE";
+    color: var(--fsx-grey-300);
+}
+
+.jp-Collapser {
+    flex: none;
+    position: absolute;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: auto;
+    margin: 2px 0 0 4px;
+    border: none;
+    outline: none;
+    border-radius: calc(var(--jp-border-radius)/2);
+    opacity: 1;
+    z-index: 1;
+}
+
+.jp-InputCollapser {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.jp-Cell:not(.jp-mod-noOutputs) .jp-Cell-outputCollapser {
+    min-height: unset;
+}
+
+.jp-Notebook .jp-Cell.jp-mod-active .jp-OutputCollapser {
+    background: var(--fsx-layout-color1);
+}
+
+.jp-Notebook .jp-Cell:hover .jp-InputCollapser::before{
+    content: "\25BE";
+    color: var(--fsx-grey-600);
+}
+
+.jp-Notebook .jp-Cell:not(.jp-mod-noOutputs):hover .jp-OutputCollapser::before {
+    content: "\25BE";
+    color: var(--fsx-grey-600);
 }
