@@ -37,16 +37,6 @@ all of MD as it is not optimized for dense, information rich UIs.
   --fsx-grey-950: #161616;
   --fsx-grey-1000: #0e0e0e;
   
-  --fsx-grey-100: #fafafa;
-  --fsx-grey-200: #dfdfdf;
-  --fsx-grey-300: #c2c2c2;
-  --fsx-grey-400: #a1a1a1;
-  --fsx-grey-500: #777777;
-  --fsx-grey-600: #5a5a5a;
-  --fsx-grey-700: #3a3a3a;
-  --fsx-grey-800: #303030;
-  --fsx-grey-900: #242424;
-  --fsx-grey-950: #161616;   /* Newly defined */
 
   --fsx-blue-100: #EBF8FF;
   --fsx-blue-200: #BEE3F8;
@@ -455,12 +445,12 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* General editor styles */
 
-  --jp-editor-selected-background: #d9d9d9;
+  --jp-editor-selected-background: #ffffff18;
   /* --jp-search-selected-match-color: var(--); */
   --jp-search-selected-match-background-color: var(--fsx-red-700);
   /* --jp-search-unselected-match-color: var(--); */
   --jp-search-unselected-match-background-color: var(--fsx-red-950);
-  --jp-editor-selected-focused-background: #d9d9d9;
+  --jp-editor-selected-focused-background: #ffffff30;
   --jp-editor-cursor-color: white;
 
   /* Code mirror specific styles */
@@ -468,7 +458,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-atom-color: var(--fsx-blue-300);
   --jp-mirror-editor-number-color: #ac80ff;
   --jp-mirror-editor-def-color: #a6e22c;
-  --jp-mirror-editor-variable-color: #fd9621;
+  --jp-mirror-editor-variable-color: var(--fsx-grey-100);  
   --jp-mirror-editor-variable-2-color: var(--fsx-blue-400);
   --jp-mirror-editor-variable-3-color: var(--fsx-green-600);
   --jp-mirror-editor-punctuation-color: var(--fsx-blue-400);

@@ -162,6 +162,12 @@ span.CodeMirror-selectedtext {
   padding-top: 2px;
 }
 
+/* Text colors */
+
+.CodeMirror.cm-s-jupyter {
+  color: var(--jp-content-font-color3);
+}
+
 /* Error code */
 
 .cm-s-jupyter span.cm-error {
@@ -326,13 +332,13 @@ jp-Notebook.jp-mod-editMode .jp-Cell.jp-mod-active .jp-InputArea-editor {
   margin-top: 0px;
   height: fit-content;
   z-index: 4;
-  background: var(--fsx-red-900);
+  background: var(--fsx-red-800);
   font-weight: bold;
   position: absolute;
   border-radius: calc(var(--jp-border-radius)/2);
   padding: 2px;
   margin-left: 16px;
-  box-shadow: var(--jp-elevation-z1);
+  box-shadow: var(--jp-elevation-z0);
 }
 
 .jp-OutputPrompt {
@@ -451,7 +457,7 @@ jp-Notebook.jp-mod-editMode .jp-Cell.jp-mod-active .jp-InputArea-editor {
 
 
 .jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser {
-    background: var(--fsx-red-900);
+    background: var(--fsx-red-800);
 }
 
 .jp-Notebook .jp-Collapser:hover {
